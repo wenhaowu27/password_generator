@@ -14,25 +14,32 @@
     <header class="headerFont"><h1>Password Generator</h1></header>
 
     <!-- Input customize phrase -->
-    <div id="inputPhrase">
-        <h2>Input Your Phrase Here</h2>
-        <form>
-            <input type="text" id="pwdInput" style="width: 50%; height: 2em;">     
-            <button class="btn btn-primary btn-lg" id="refresh">Refresh</button>
-        </form>
-        <br>
-        <button class="btn btn-primary btn-lg" id="pwGen">Generate Password</button>
-        <div class="outputPhrase" id="pwdOutput">New Password</div>
+    <div class="row">
+        <div class="col-md-2 col-sm-2"></div>
+        <div class="col-md-8 col-sm-8">
+            <div id="inputPhrase">
+                <h2>Input Your Phrase Here</h2>
+                <form>
+                    <input type="text" id="pwdInput" style="width: 50%; height: 2em;">     
+                    <button class="btn btn-primary btn-lg" id="refresh">Refresh</button>
+                </form>
+                <br>
+                <button class="btn btn-primary btn-lg" id="pwGen">Generate Password</button>
+                <div class="outputPhrase" id="pwdOutput">Your New Password</div>
+            </div>
+        </div>
+        <div class="col-md-2 col-sm-2 fade"></div>
     </div>
+
         
     
 
 
     <!-- Footer Area for explanation of this app -->
-  
+<!--   
 <footer>    
     <p><i class="fa fa-trademark" style="font-size:24px ; color: white;"></i></i></p>
-</footer>  
+</footer>   -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="./assets/javascript/password_generator.js"></script>
 </body>
