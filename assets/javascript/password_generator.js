@@ -4,7 +4,7 @@
           //c stand for character, n stand for number
           var c_a = ['a','A','4','@','^'];
           var c_b = ['B','6','b','8'];
-          var c_c = ['C','c','[','(','<',']',')'];
+          var c_c = ['C','c','[','(','<','>',']',')'];
           var c_d = ['D','d'];
           var c_e = ['e','E','3'];
           var c_f = ['f','F'];
@@ -28,6 +28,7 @@
           var c_x = ['X','x','*'];
           var c_y = ['Y','y'];
           var c_z = ['Z','z','2'];
+          var c_aps = ["'",'"','`'];
           var n_1 = ['I','l','1'];
           var n_2 = ['z','Z','2'];
           var n_3 = ['3','E'];
@@ -38,7 +39,7 @@
           var n_8 = ['8','B'];
           var n_9 = ['9','g'];
           var n_0 = ['0','O','o'];
-          var s_p = ['~','@','#','$','%','&','*','.','<','>',':',';','"','?','/']
+          var s_p = ['~','@','#','$','%','&','*','.',':',';','?','/']
           
           //Random pick character from each alphabat array
 
@@ -68,6 +69,7 @@
           var x_rand = c_x[Math.floor(Math.random()*c_x.length)];
           var y_rand = c_y[Math.floor(Math.random()*c_y.length)];
           var z_rand = c_z[Math.floor(Math.random()*c_z.length)];
+          var aps_rand = c_aps[Math.floor(Math.random()*c_aps.length)];
           var n0_rand = n_0[Math.floor(Math.random()*n_0.length)];
           var n1_rand = n_1[Math.floor(Math.random()*n_1.length)];
           var n2_rand = n_2[Math.floor(Math.random()*n_2.length)];
@@ -329,6 +331,9 @@
                           case '-':
                             new_char = '-';
                             break;                  
+                          case "'":
+                            new_char = new_char = c_aps[Math.floor(Math.random()*c_aps.length)];
+                            break;                  
                           case ' ':
                             new_char = '';
                             break;                  
@@ -338,10 +343,7 @@
                         }        
                         return new_char      
                     }
-
-         
-          // alert('pwdArr ' + pwdArr);
-          // alert(new_pwd);
+  
           $(document).on("click","#pwGen", function() {
             var inputPhrase = $("#pwdInput").val().trim();           
             var strArr = inputPhrase.toLowerCase().split('');
@@ -354,12 +356,11 @@
               for (let j = 0; j < strArr.length; j++) {
                 pwdArr.push(char_conversion(strArr[j]))
               };
-              new_pwd[i] = pwdArr.join('');
+              // alert(pwdArr);
+              new_pwd[i] = pwdArr.join("");
               pwdArr = [];        
-              // $('#pwdOutput').html(new_pwd[i])          
-              // It then creates a new div for each drink. Note we create divs and add the content in the same line.            
-              // It then adds this new div to the drinkList div.
-              pwdDiv.append("<div>" + new_pwd[i] + "</div>");
+           
+              pwdDiv.append("<div>" + new_pwd[i] + "</div>").css('color','#FF0000');
             }
             //end of 5 iteration
           });
