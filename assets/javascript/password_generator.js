@@ -349,18 +349,30 @@
             var strArr = inputPhrase.toLowerCase().split('');
             //Loop string array through character conversattion
             var pwdArr = [];
+            var pwdArr_reverse = [];
             var new_pwd = [];
+            var new_pwd_Reverse = [];
             var pwdDiv = $('#pwdOutput');
             // To generate 5 new passwords
             for (var i = 0; i < 5; i++) {
               for (let j = 0; j < strArr.length; j++) {
                 pwdArr.push(char_conversion(strArr[j]))
               };
+
+              //reverse string to backward             
+              var l = 0
+              for (let k = pwdArr.length; k >= 0; k--){                
+                pwdArr_reverse [l] = pwdArr[k];
+                l++
+              }
+
               // alert(pwdArr);
               new_pwd[i] = pwdArr.join("");
-              pwdArr = [];        
+              new_pwd_Reverse[i] = pwdArr_reverse.join("");
+              pwdArr = [];
+              pwdArr_reverse = [];        
            
-              pwdDiv.append("<div>" + new_pwd[i] + "</div>").css('color','#FF0000');
+              pwdDiv.append("<div>" + new_pwd[i] + " | " + " " + new_pwd_Reverse[i] + "</div>").css('color','#FF0000');
             }
             //end of 5 iteration
           });
