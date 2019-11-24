@@ -4,7 +4,7 @@
           //c stand for character, n stand for number
           var c_a = ['a','A','4','@','^'];
           var c_b = ['B','6','b','8'];
-          var c_c = ['C','c','[','(','<','>',']',')'];
+          var c_c = ['C','c','(','['];
           var c_d = ['D','d'];
           var c_e = ['e','E','3'];
           var c_f = ['f','F'];
