@@ -370,10 +370,9 @@
               new_pwd[i] = pwdArr.join("");
               new_pwd_Reverse[i] = pwdArr_reverse.join("");
               pwdArr = [];
-              pwdArr_reverse = [];
-              // pwdDiv.addClass("outputPhrase");          
+              pwdArr_reverse = [];      
               // pwdDiv.append("<div>" + new_pwd[i] + " | " + " " + new_pwd_Reverse[i] + "</div>").css('color','#FF0000');
-              pwdDiv.after('<tr><th>' + new_pwd[i]+ '</th><th>' + new_pwd_Reverse[i] + '</th></tr>').css('color',"#FF0000");
+              pwdDiv.after('<tr><th>' + new_pwd[i]+ '</th><th>' + new_pwd_Reverse[i] + '</th></tr>')
             }
             //end of 5 iteration
           });
