@@ -83,136 +83,8 @@
           var nsp_rand = s_p[Math.floor(Math.random()*s_p.length)];
           
 
-          // //Function of character conversation
-          // function char_conversion(char_input){       
-          //   var new_char = "";                    
-          //     switch (char_input) {
-          //       case 'a':
-          //         new_char = a_rand;
-          //         break;
-          //       case 'b':
-          //         new_char = b_rand;
-          //         break;
-          //       case 'c':
-          //         new_char = c_rand;
-          //         break;
-          //       case 'd':
-          //         new_char = d_rand;
-          //         break;
-          //       case 'e':
-          //         new_char = e_rand;
-          //         break;
-              
-          //       case 'f':
-          //         new_char = f_rand;
-          //         break;
-          //       case 'g':
-          //         new_char = g_rand;
-          //         break;
-          //       case 'h':
-          //         new_char = h_rand;
-          //         break;
-          //       case 'i':
-          //         new_char = i_rand;
-          //         break;
-          //       case 'j':
-          //         new_char = j_rand;
-          //         break;
-          //       case 'k':
-          //         new_char = k_rand;
-          //         break;
-          //       case 'l':
-          //         new_char = l_rand;
-          //         break;
-          //       case 'm':
-          //         new_char = m_rand;
-          //         break;
-          //       case 'n':
-          //         new_char = n_rand;
-          //         break;
-          //       case 'o':
-          //         new_char = o_rand;
-          //         break;
-          //       case 'p':
-          //         new_char = p_rand;
-          //         break;
-          //       case 'q':
-          //         new_char = q_rand;
-          //         break;
-          //       case 'r':
-          //         new_char = r_rand;
-          //         break;
-          //       case 's':
-          //         new_char = s_rand;
-          //         break;              
-          //       case 't':
-          //         new_char = t_rand;
-          //         break;
-          //       case 'u':
-          //         new_char = u_rand;
-          //         break;
-          //       case 'v':
-          //         new_char = v_rand;
-          //         break;
-          //       case 'w':
-          //         new_char = w_rand;
-          //         break;
-          //       case 'x':
-          //         new_char = x_rand;
-          //         break;
-          //       case 'y':
-          //         new_char = y_rand;
-          //         break;
-          //       case 'z':
-          //         new_char = z_rand;
-          //         break;
-          //       case '0':
-          //         new_char = n0_rand;
-          //         break;
-          //       case '1':
-          //         new_char = n1_rand;
-          //         break;
-          //       case '2':
-          //         new_char = n2_rand;
-          //         break;
-          //       case '3':
-          //         new_char = n3_rand;
-          //         break;
-          //       case '4':
-          //         new_char = n4_rand;
-          //         break;
-          //       case '5':
-          //         new_char = n5_rand;
-          //         break;
-          //       case '6':
-          //         new_char = n6_rand;
-          //         break;
-          //       case '7':
-          //         new_char = n7_rand;
-          //         break;
-          //       case '8':
-          //         new_char = n8_rand;
-          //         break;
-          //       case '9':
-          //         new_char = n9_rand;
-          //         break;
-          //       case '_':
-          //         new_char = '_';
-          //         break;
-          //       case '-':
-          //         new_char = '-';
-          //         break;                  
-          //       case ' ':
-          //         new_char = '';
-          //         break;                  
-          //       default:
-          //           new_char = nsp_rand;
-          //         break;
-          //     }        
-          //     return new_char      
-          // }
           //Function of character conversation
-                    //Function of character conversation
+          
                     function char_conversion(char_input){       
                       var new_char;                    
                         switch (char_input) {
@@ -345,7 +217,8 @@
                     }
   
           $(document).on("click","#pwGen", function() {
-            var inputPhrase = $("#pwdInput").val().trim();           
+            var inputPhrase = $("#pwdInput").val().trim();   
+            //Split phrase into individual character        
             var strArr = inputPhrase.toLowerCase().split('');
             //Loop string array through character conversattion
             var pwdArr = [];
@@ -366,7 +239,7 @@
                 l++
               }
 
-              // alert(pwdArr);
+              // Assembly character back to string/phrase
               new_pwd[i] = pwdArr.join("");
               new_pwd_Reverse[i] = pwdArr_reverse.join("");
               pwdArr = [];
