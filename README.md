@@ -9,4 +9,8 @@ This app is to design a password generator with user's easy-to-remember phrase. 
 * Switch Case
 * .after() to table
 
+## Project Link
+
+https://wenhaowu27.github.io/password_generator/
+
 ![Password Generator](./assets/images/passwpordGenerator.jpg)
