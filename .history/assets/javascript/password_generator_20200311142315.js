@@ -220,7 +220,7 @@
             var inputPhrase = $("#pwdInput").val().trim();   
             //Split phrase into individual character        
             var strArr = inputPhrase.toLowerCase().split('');
-            //Loop string array through character conversation
+            //Loop string array through character conversattion
             var pwdArr = [];
             var pwdArr_reverse = [];
             var new_pwd = [];
