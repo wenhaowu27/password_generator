@@ -15,7 +15,7 @@
           var c_k = ['k','K'];
           var c_l = ['l','L','1','|','!'];
           var c_m = ['m','M'];
-          var c_n = ['n','N','/'];
+          var c_n = ['n','N'];
           var c_o = ['0','o','O'];
           var c_p = ['P','p','?'];
           var c_q = ['Q','q','9'];
@@ -24,7 +24,7 @@
           var c_t = ['T','t','7'];
           var c_u = ['U','u'];
           var c_v = ['V','v','^'];
-          var c_w = ['W','w','{','}'];
+          var c_w = ['W','w'];
           var c_x = ['X','x','*'];
           var c_y = ['Y','y'];
           var c_z = ['Z','z','2'];
