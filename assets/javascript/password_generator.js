@@ -17,7 +17,7 @@
           var c_m = ['m','M'];
           var c_n = ['n','N'];
           var c_o = ['0','o','O'];
-          var c_p = ['P','p','?'];
+          var c_p = ['P','p'];
           var c_q = ['Q','q','9'];
           var c_r = ['R','r'];
           var c_s = ['$','&','5','S','s'];
