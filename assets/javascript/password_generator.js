@@ -23,7 +23,7 @@
           var c_s = ['$','&','5','S','s'];
           var c_t = ['T','t','7'];
           var c_u = ['U','u'];
-          var c_v = ['V','v','^'];
+          var c_v = ['V','v'];
           var c_w = ['W','w'];
           var c_x = ['X','x','*'];
           var c_y = ['Y','y'];
