@@ -2,9 +2,9 @@
     $(document).ready(function() {      
                 
           //c stand for character, n stand for number
-          var c_a = ['a','A','4','@','^'];
+          var c_a = ['a','A','4','@'];
           var c_b = ['B','6','b','8'];
-          var c_c = ['C','c','(','['];
+          var c_c = ['C','c','('];
           var c_d = ['D','d'];
           var c_e = ['e','E','3'];
           var c_f = ['f','F'];
@@ -240,8 +240,10 @@
               }
 
               // Assembly character back to string/phrase
-              new_pwd[i] = pwdArr.join("");
-              new_pwd_Reverse[i] = pwdArr_reverse.join("");
+              nsp_rand = s_p[Math.floor(Math.random()*s_p.length)]
+              new_pwd[i] = pwdArr.join("") + nsp_rand;
+              nsp_rand = s_p[Math.floor(Math.random()*s_p.length)]
+              new_pwd_Reverse[i] = pwdArr_reverse.join("") + nsp_rand;
               pwdArr = [];
               pwdArr_reverse = [];                  
               pwdDiv.after('<tr><th>' + new_pwd[i]+ '</th><th>' + new_pwd_Reverse[i] + '</th></tr>')
